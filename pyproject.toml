@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "aiogram-boost"
+version = "0.1.0"
+description = ""
+authors = ["sergey <saalaus2@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.3"
+
+[tool.poetry.dev-dependencies]
+aiogram = "^2.22.1"
+environs = "^9.5.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+aiogram-boost = "aiogram_boost.cli:basic_group"
